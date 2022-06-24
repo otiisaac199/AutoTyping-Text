@@ -15,6 +15,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -25,10 +26,18 @@ body {
 
 .container h1 {
   color: #fff;
-  font-size: 5rem;
+  word-wrap: anywhere;
+  font-size: 3rem;
 }
 
 span {
   color: #fff724;
+}
+
+@media screen and (max-width: 550px) {
+  h1 {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
